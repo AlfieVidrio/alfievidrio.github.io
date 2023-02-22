@@ -49,10 +49,39 @@
   background: #2C2C2C;
   color: #B6ECCE;
 }
-
-a {
+a { 
+  opacity: 1;
+  position: relative;
+  color: #2bad65;
+  font-weight: 400;
   text-decoration: none;
-  color: inherit;
+}
+
+span > a:hover {
+  color: #2bad65;
+}
+
+span > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2.5px;
+  left: 0;
+  background-color: #2bad65;
+  visibility: hidden;
+  delay: 0s none !important;
+  position: true;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+span > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 h1 {
