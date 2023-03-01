@@ -87,5 +87,3 @@ function drink_formatter(drink_dict) {
 app.get('/', (req, res) => {
   res.render('drinkform.html');
 });
-
-app.get('/drinkresponse', async (req, res) => {
