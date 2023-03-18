@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="./css.css" />
+    <title>MP2 Writeup</title>
+    <link rel="icon" type="image/x-icon" href="./images/favi.png">
   </head>
   <body>
     <div class="container">
@@ -15,7 +17,8 @@
                 there are no remaining white dots to consume.
                 <a href="https://alfievidrio.github.io/mp3-bulba/">Live game can be found here</a>. 
                 See gif below for preview.   
-            <img src="./mp3-files/mp3-bulba.gif" style="max-width: 500px; display: block; margin: 15px 0;">            
+            <img src="./mp3-files/mp3-bulba.gif" style="max-width: 500px; display: block; margin: 15px 0;"
+            alt ="Preview of the game play">            
             </span>
         </div>
         <div>
@@ -39,7 +42,8 @@
                 adjusted to appear in the correct spots. I ran into some difficulty setting a texture onto the 
                 maze walls, but that was the only issue I had with adapting the code itself. See below for a 
                 screenshot of what the maze looked like prior to working out how to get grass texture working:
-                <img src="./mp3-files/mp3-in-progress.png" style="max-width: 500px; display: block; margin: 15px 0;">
+                <img src="./mp3-files/mp3-in-progress.png" style="max-width: 500px; display: block; margin: 15px 0;"
+                alt="Progress picture of the game">
               </li>
               <li>
                 The next portion involved actually getting the game deployed. I struggled to install p5.js, but 
@@ -59,11 +63,13 @@
           <span>
             One of the largest issues that I had was with getting my game to correctly deploy. 
             I could not identify the issue until I opened up my console and saw the following 404 errors: 
-            <img src="./mp3-files/mp3-issue.png" style="max-width: 500px; display: block; margin: 15px 0;">
+            <img src="./mp3-files/mp3-issue.png" style="max-width: 500px; display: block; margin: 15px 0;"
+            alt="Image of first major issue I encountered">
             With the help of my capstone group, I was able to quickly figure out that the issue was with 
             importing the folder containing all of the sprites into the “dist" folder. Simply making sure 
             that the following lines of code were in my rollup.config.js solved the issue. 
-            <img src="./mp3-files/mp3-issue-2.png" style="max-width: 500px; display: block; margin: 15px 0;">
+            <img src="./mp3-files/mp3-issue-2.png" style="max-width: 500px; display: block; margin: 15px 0;"
+            alt="Image of the code that fixed my issue">
           </span>
         </div>
         <div>
@@ -82,7 +88,7 @@
             provided support and guidance when I needed it most.
           </span>
         </div>
-        <a href="./home.html"><div class="button">Return to Home Page</div></a>
+        <a href="./new-home.html"><div class="button">Return to Home Page</div></a>
     </div>
   </body>
 </html>

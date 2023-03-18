@@ -1,4 +1,4 @@
-  body {
+ body {
     font-family: "Jost", "Verdana", sans-serif;
     background: url('./images/monstera.jpeg');
     background-size: cover;
@@ -8,6 +8,10 @@
     height: 100vh;
     margin: 0;
     overflow: scroll;
+  }
+
+  body #not-main {
+    background: #fff;
   }
 
   #cover {
@@ -36,7 +40,8 @@
     margin-top: 100vh;
   }
 
-  .content a {
+  .content a,
+  a {
     text-decoration: none;
   }
 
@@ -166,5 +171,13 @@
     background-position: center;
     image-rendering: pixelated;
   }
+
+  .container {
+    width: 98%
+
+  }
   
+  .title {
+    font-size: 4vh;
+  }
 
