@@ -1,0 +1,88 @@
+body {
+    font-family: "Jost", "Verdana", sans-serif;
+    background: url('./space.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    background-color: #000;
+    height: 100vh;
+    margin: 0;
+    overflow: scroll;
+  }
+
+  #cover {
+    
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    margin-right: 10%;
+  }
+
+  /* Set the color of the text to white */
+  #cover h1, 
+  #cover h2 {
+    color: white;
+    text-align: left;
+    font-size: 7vh;
+    margin: 0;
+    padding: 0;
+  }
+  #cover h2 {
+    font-size: 4vh;
+  }
+
+  /* Set the body to animate the background color over 2 seconds */
+  body {
+    animation: fade 2s forwards;
+  }
+
+  /* Set the content below the h1 to be on a white background */
+  .content {
+    background-color: white;
+    padding: 50px;
+    margin-top: 100vh;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Style the divs */
+  .flex-item {
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 0;
+    padding-bottom: 30%;
+  }
+
+  /* Unique background colors for each div */
+  .bg-color-1 {
+    background-color: #007bff; /* blue */
+  }
+  .bg-color-2 {
+    background-color: #28a745; /* green */
+  }
+  .bg-color-3 {
+    background-color: #dc3545; /* red */
+  }
+  /* Add more classes and background colors as needed */
+  @media (max-width: 768px) {
+    .flex-item {
+      flex-basis: calc(100% / 2 - 20px);
+      padding-bottom: 45%;
+    }
+  }
+
+  /* Media query to adjust flex-basis for even smaller screens */
+  @media (max-width: 576px) {
+    .flex-item {
+      flex-basis: calc(100% - 20px);
+      padding-bottom: 90%;
+    }
+  }
