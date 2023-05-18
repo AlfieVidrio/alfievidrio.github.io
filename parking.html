@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="./css.css" />
     <title>Información de Estacionamiento</title>
-    <link rel="icon" type="image/x-icon" href="./images/favi.png">
+    <link rel="icon" type="image/x-icon" href="./images/grad-favi.png">
     <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
     <style>
         #map {
@@ -12,32 +12,23 @@
         }
         </style>
     </head>
-  <body>
+  <body style="background: #FFFBEE;">
     <div class="container">
         <div class="title">Información de Estacionamiento</div>
         <div style="margin-top: 30px">
-            <span>El campus de la Universidad de Washington es muy grande y encontrar  estancamiento es difícil. Yo recomiendo 3 opciones.</span>
-            <h1>Opccion</h1>
-            <div id="map"></div>
-            <script>
-                mapkit.init({
-                    authorizationCallback: function(done) {
-                        var xhr = new XMLHttpRequest();
-                        xhr.open("GET", "/services/jwt");
-                        xhr.addEventListener("load", function() {
-                            done(this.responseText);
-                        });
-                        xhr.send();
-                    }
-                });
-                
-                var UW = new mapkit.CoordinateRegion(
-                    new mapkit.Coordinate(47.656849, -122.311627),
-                    new mapkit.CoordinateSpan(0.167647972, 0.354985255)
-                );
-                var map = new mapkit.Map("map");
-                map.region = UW;
-                </script>
-        </div>
+            <span>El campus de la Universidad de Washington es muy grande y encontrar estancamiento es difícil. 
+                Hay 2 opciones.
+            </span>
+            <h3>Opción 1: Usar Pase de Estacionamiento</h3>
+            <span>Solo me dan 2 pases oficiales que permiten estacionamiento en campus. Estos pases son para las familias Flores-Vidrio y Aguilar-Vidrio. No hay costo para usar estos pases, pero hay tickets que necesitan ser colocados en sus carros. Yo se los daré cuando los reciba. 
+            <br><br>
+            Al momento no tengo toda la información sobre la ubicación del garage. Regrese a esta página para confirmar la ubicación antes del 9 de Junio. También les dejaré saber por texto.
+            </span>
+            <br>
+            <h3>Opción 2: Estacionamiento Privado</h3>
+            <span>Hay muchos lugares cerca del campus, al oeste, donde pueden estacionarse. Yo recomiendo el parqueadero que está muestreado en el mapa por debajo; este parqueadero está cerca del campus y no es demasiado caro. Hay muchos otros parqueaderos públicos en esta área. Pongan mucha atención antes de pagar porque cada parqueadero usa diferentes aplicaciones. 
+            </span>
+            <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.397009079455!2d-122.3098690062762!3d47.65728340377402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014f36ac26629%3A0x6bb9bf619e0f2f62!2s1454%20NE%2041st%20St%20Parking!5e0!3m2!1sen!2sus!4v1684368285811!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
   </body>
   </html>
