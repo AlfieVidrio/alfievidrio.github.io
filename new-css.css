@@ -1,0 +1,183 @@
+ body {
+    font-family: "Jost", "Verdana", sans-serif;
+    background: url('./images/monstera.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #000;
+    height: 100vh;
+    margin: 0;
+    overflow: scroll;
+  }
+
+  body #not-main {
+    background: #fff;
+  }
+
+  #cover {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    margin-right: 10%;
+  }
+
+  #cover h1, 
+  #cover h2 {
+    color: white;
+    text-align: left;
+    font-size: 7vh;
+    margin: 0;
+    padding: 0;
+  }
+  #cover h2,
+  .content h2 {
+    font-size: 4vh;
+  }
+
+  .content {
+    background-color: white;
+    padding: 50px;
+    margin-top: 100vh;
+  }
+
+  .content a,
+  a {
+    text-decoration: none;
+  }
+
+  /* flex container */
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  /* titles for flex items */
+  .item-title {
+    opacity: 0;
+    background-color: #2C2C2C;
+    font-size: 2vh;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    transition: opacity 1s ease 0s;
+  }
+
+  .c0:hover .item-title,
+  .c1:hover .item-title,
+  .c2:hover .item-title,
+  .c3:hover .item-title,
+  .c4:hover .item-title,
+  .c5:hover .item-title,
+  .c6:hover .item-title,
+  .c7:hover .item-title,
+  .c8:hover .item-title {
+    opacity: 1;
+  }
+  
+  /* first page flex items */
+  .c0,
+  .c1,
+  .c2,
+  .c3,
+  .c4,
+  .c5,
+  .c6,
+  .c7,
+  .c8 {
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 20px;
+    background: #000;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .c0 {
+    background: url("./images/about-me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c1 {
+    background: url("./images/cheatsheet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c2 {
+    background: url("./images/portfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c3 {
+    background: url("./mp1-files/mp1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c4 {
+    background: url("./mp2-files/sketch-4.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c5 {
+    background: url("./images/game.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c6 {
+    background: url("./images/wine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c7 {
+    background: url("./images/drink-proto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .c8 {
+    background: url("./images/drink-final.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+  }
+
+  .container {
+    width: 98%
+
+  }
+  
+  .title {
+    font-size: 4vh;
+  }
+
